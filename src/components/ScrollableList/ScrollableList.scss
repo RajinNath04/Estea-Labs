@@ -1,0 +1,14 @@
+.demo-infinite-container {
+    height: 500px;
+    padding: 0px 10px;
+    overflow: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+.demo-loading-container {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}

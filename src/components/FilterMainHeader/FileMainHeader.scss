@@ -1,0 +1,56 @@
+.filterMainHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 10px 0px 10px;
+    background-color: lightgrey;
+
+    .filterMainHeader-SectionOne {
+        flex-basis: 20%;
+    }
+
+    .filterMainHeader-SectionThree {
+        flex-basis: 15%;
+    }
+
+    .filterMainHeader-SectionFour {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.filterMainHeaderSecondSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px 10px;
+    background-color: lightgrey;
+
+    .filterMainHeaderSecondSection-one {
+        margin-left: 8px;
+    }
+
+    .filterMainHeaderSecondSection-second {
+
+        flex-basis: 20%;
+        display: flex;
+        justify-content: center;
+
+        p {
+            width: 200px;
+            margin-top: 3px;
+        }
+
+        .ant-slider {
+            width: 100%;
+        }
+    }
+
+    .filterMainHeaderSecondSection-third {
+        flex-basis: 27%;
+    }
+
+    .filterMainHeaderSecondSection-four {
+        flex-basis: 17%;
+    }
+}

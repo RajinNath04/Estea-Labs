@@ -1,0 +1,211 @@
+$inputHeight : 70px;
+$inputBorderColor : #c5cbde;
+$error : red;
+$labelFont : 'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
+$inputFieldHeight : 38px;
+$labelFontSize : 12px;
+$labelColor : '#000';
+$inputBackgroundColor: #fff;
+
+.input {
+    // height  : $inputHeight;
+    position: relative;
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        // height  : $inputHeight;
+
+        label {
+            color: $labelColor;
+            font-family: $labelFont;
+            font-size: 14px;
+            margin-right: 5px;
+            line-height: 16px;
+        }
+
+        input {
+            box-sizing: border-box;
+            height: $inputFieldHeight;
+            border-radius: 4px;
+            background-color: $inputBackgroundColor;
+            border: 1px solid $inputBorderColor;
+            margin-top: 2px;
+
+            .ant-input {
+                background: white !important;
+            }
+
+        }
+
+        .password-eye {
+            position: absolute;
+            top: 28px;
+            right: 10px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+.SingleSelect {
+    display: flex;
+    align-items: center;
+
+    label {
+        color: $labelColor;
+        font-family: $labelFont;
+        font-size: $labelFontSize;
+        line-height: 16px;
+    }
+
+    ._single-select {
+        margin-top: 2px;
+        width: 100%;
+
+        &__placeholder {
+            color: #bcbcbc;
+        }
+
+        &__control {
+            border-color: $inputBorderColor !important;
+        }
+
+        &__menu {
+            z-index: 999 !important;
+        }
+    }
+}
+
+
+
+
+
+
+.inputDate {
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    label {
+        color: $labelColor;
+        font-family: $labelFont;
+        font-size: $labelFontSize;
+        line-height: 16px;
+        margin-right: 5px;
+    }
+
+    .ant-calendar-picker {
+        margin-top: 2px;
+        width: 100%;
+
+        input {
+            box-sizing: border-box;
+            height: $inputFieldHeight;
+            border-radius: 4px;
+            background-color: $inputBackgroundColor;
+            border: 1px solid $inputBorderColor;
+            margin-top: 2px;
+        }
+    }
+
+    .ant-picker {
+        width: 100%;
+    }
+
+    .ant-time-picker {
+        margin-top: 2px;
+        width: 100%;
+
+        input {
+            box-sizing: border-box;
+            height: $inputFieldHeight;
+            border-radius: 4px;
+            background-color: $inputBackgroundColor;
+            border: 1px solid $inputBorderColor;
+            margin-top: 2px;
+        }
+    }
+
+    .ant-input:disabled {
+        background-color: #f5f5f5 !important;
+    }
+}
+
+.error_message {
+    color: $error;
+}
+
+.disabledselect {
+    cursor: not-allowed;
+}
+
+.SingleSelect.SingleSelect-wrapper.red {
+    ._single-select__control {
+        background: #ffe2e6;
+        border-color: #ffe2e6 !important;
+
+        &--is-focused {
+            box-shadow: 0 0 0 1px red !important;
+        }
+
+        ._single-select__single-value {
+            color: #ff1737;
+        }
+
+        svg {
+            path {
+                fill: #ff1737;
+            }
+        }
+    }
+}
+
+.SingleSelect.SingleSelect-wrapper.green {
+    ._single-select__control {
+        background: rgba(3, 168, 41, 0.12);
+        border-color: rgba(3, 168, 41, 0.12) !important;
+
+        &--is-focused {
+            box-shadow: 0 0 0 1px #03a829 !important;
+        }
+
+        ._single-select__single-value {
+            color: #03a829;
+        }
+
+        svg {
+            path {
+                fill: #03a829;
+            }
+        }
+    }
+}
+
+.SingleSelect.SingleSelect-wrapper.yellow {
+    ._single-select__control {
+        background: #f3f344;
+        border-color: #f3f344 !important;
+
+        &--is-focused {
+            box-shadow: 0 0 0 1px #26265d !important;
+        }
+
+        ._single-select__single-value {
+            color: #26265d;
+        }
+
+        svg {
+            path {
+                fill: #26265d;
+            }
+        }
+    }
+}
